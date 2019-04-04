@@ -1,10 +1,16 @@
 const Index = () => {
   return <div>
-    <p>terve</p>
+    <div>this is a test app:</div>
+    <div>nextjs ✅</div>
+    <div>docker ✅</div>
+    <div>nginx ✅</div>
+    <div>travis CI ✅</div>
+    <div>AWS elastic beanstalk ✅</div>
+
 
     <style jsx>{`
-      font-size: 2em;
-      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 1.7em;
       text-align: center;
     `}</style>
   </div>
