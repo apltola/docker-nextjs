@@ -30,7 +30,7 @@ FROM node:alpine
 WORKDIR /usr/app
 
 # Install PM2 globally
-RUN npm install pm2
+# RUN npm install pm2
 
 # Copy "package.json" and "package-lock.json" before other files
 # Utilise Docker cache to save re-installing dependencies if unchanged
@@ -49,4 +49,5 @@ RUN npm run build
 EXPOSE 3000
 
 # Launch app with PM2
-CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
+# CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
+CMD [ "npm", "run", "start" ]
