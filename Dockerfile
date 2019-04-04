@@ -46,7 +46,7 @@ COPY ./ ./
 RUN npm run build
 
 # Expose the listening port
-EXPOSE 3000
+#EXPOSE 3000
 
 # Launch app with PM2
 CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
